@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jw-8V-PED">
+                                <rect key="frame" x="60" y="122" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Lmt-5v-XGM"/>
+                                    <constraint firstAttribute="height" constant="50" id="VRx-kD-IoE"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jvk-o8-mvs"/>
+                                    <constraint firstAttribute="width" constant="200" id="kiS-dz-VGF"/>
+                                </constraints>
+                                <state key="normal" title="发送通知2"/>
+                                <connections>
+                                    <action selector="sendNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDQ-qh-zi8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gau-2P-aIh">
+                                <rect key="frame" x="60" y="339" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="rVX-ee-T1Z"/>
+                                    <constraint firstAttribute="height" constant="50" id="xy3-98-Isk"/>
+                                </constraints>
+                                <state key="normal" title="查看通知1"/>
+                                <connections>
+                                    <action selector="lookupNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejN-F4-1YG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-sm-tdu">
+                                <rect key="frame" x="60" y="51" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="WlA-Rs-6WA"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Zlc-Ng-jSQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="oJC-W0-aFM"/>
+                                    <constraint firstAttribute="width" constant="200" id="swf-dM-w2A"/>
+                                </constraints>
+                                <state key="normal" title="发送通知1"/>
+                                <connections>
+                                    <action selector="sendNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJ7-mv-US1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgd-hX-4Iz">
+                                <rect key="frame" x="60" y="194" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="4nE-nt-UY2"/>
+                                    <constraint firstAttribute="width" constant="200" id="66W-qF-A9W"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="pw6-AL-4oP"/>
+                                    <constraint firstAttribute="height" constant="50" id="zxC-pB-0em"/>
+                                </constraints>
+                                <state key="normal" title="发送通知3"/>
+                                <connections>
+                                    <action selector="sendNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IK2-j5-0Ac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9m-v4-Q1Q">
+                                <rect key="frame" x="60" y="484" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="AkU-FA-fYP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FBD-Td-Ffo"/>
+                                    <constraint firstAttribute="height" constant="50" id="Qy2-nY-7CK"/>
+                                    <constraint firstAttribute="width" constant="200" id="yCh-3X-PDR"/>
+                                </constraints>
+                                <state key="normal" title="查看通知3"/>
+                                <connections>
+                                    <action selector="lookupNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s42-Pz-FVJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUu-G4-pTD">
+                                <rect key="frame" x="60" y="409" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Aqe-KC-sAW"/>
+                                    <constraint firstAttribute="width" constant="200" id="Qpk-sq-bSU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="c5w-ps-s64"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uxt-El-m2a"/>
+                                </constraints>
+                                <state key="normal" title="查看通知2"/>
+                                <connections>
+                                    <action selector="lookupNotificationButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlg-vK-4Ay"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p9m-v4-Q1Q" secondAttribute="bottom" constant="34" id="0Db-hC-up9"/>
+                            <constraint firstItem="pgd-hX-4Iz" firstAttribute="top" secondItem="7Jw-8V-PED" secondAttribute="bottom" constant="22" id="4rF-uq-CSD"/>
+                            <constraint firstItem="7Jw-8V-PED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ke-1V-UWx"/>
+                            <constraint firstItem="p9m-v4-Q1Q" firstAttribute="leading" secondItem="Gau-2P-aIh" secondAttribute="leading" id="Ag1-Vi-fDs"/>
+                            <constraint firstItem="7Jw-8V-PED" firstAttribute="trailing" secondItem="Gau-2P-aIh" secondAttribute="trailing" id="AtF-H8-DWL"/>
+                            <constraint firstItem="7Jw-8V-PED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="102" id="JIc-Jd-Zat"/>
+                            <constraint firstItem="Gau-2P-aIh" firstAttribute="top" secondItem="7Jw-8V-PED" secondAttribute="bottom" constant="167" id="NO6-kz-rGU"/>
+                            <constraint firstItem="p9m-v4-Q1Q" firstAttribute="leading" secondItem="yUu-G4-pTD" secondAttribute="leading" id="UDm-dw-fgv"/>
+                            <constraint firstItem="pgd-hX-4Iz" firstAttribute="leading" secondItem="pkr-sm-tdu" secondAttribute="leading" id="Vi5-jT-NDL"/>
+                            <constraint firstItem="7Jw-8V-PED" firstAttribute="top" secondItem="pkr-sm-tdu" secondAttribute="bottom" constant="21" id="ZgD-xE-o2w"/>
+                            <constraint firstItem="p9m-v4-Q1Q" firstAttribute="top" secondItem="yUu-G4-pTD" secondAttribute="bottom" constant="25" id="i1S-8Z-1aw"/>
+                            <constraint firstItem="pgd-hX-4Iz" firstAttribute="leading" secondItem="7Jw-8V-PED" secondAttribute="leading" id="ldv-xJ-AFp"/>
+                            <constraint firstItem="7Jw-8V-PED" firstAttribute="leading" secondItem="Gau-2P-aIh" secondAttribute="leading" id="xkz-6d-dzl"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
