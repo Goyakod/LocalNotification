@@ -72,7 +72,7 @@
             if (info != nil) {
                 [[UIApplication sharedApplication] cancelLocalNotification:notification];
                 //图标的数字清零
-                ([UIApplication sharedApplication].applicationIconBadgeNumber > 1) ?([UIApplication sharedApplication].applicationIconBadgeNumber -= 1):0 ;
+                ([UIApplication sharedApplication].applicationIconBadgeNumber >= 1) ?([UIApplication sharedApplication].applicationIconBadgeNumber -= 1):0 ;
                 break;
             }
         }

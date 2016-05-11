@@ -58,6 +58,18 @@
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
     NSLog(@"******didReceiveLocalNotification******");
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"本地通知" message:[notification.userInfo allValues].firstObject preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cacel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"取消");
+    }];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"确认");
+    }];
+    [alert addAction:cacel];
+    [alert addAction:action];
+    
+    [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
 }
 
  
